@@ -51,5 +51,38 @@
     <a href="#"><img src="images/tiktok.png" alt="TikTok" /></a>
   </div>
   <script src="script.js"></script>
+
+<div id="visitModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>ვიზიტის ჩანიშვნა</h2>
+    <form id="visit-form">
+      <label for="name">სახელი:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">ტელეფონი:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="address">მისამართი:</label>
+      <input type="text" id="address" name="address">
+
+      <label for="service">მომსახურების ტიპი:</label>
+      <select id="service" name="service">
+        <option value="general">ზოგადი დასუფთავება</option>
+        <option value="deep">ღრმა დასუფთავება</option>
+        <option value="window">ფანჯრების წმენდა</option>
+      </select>
+
+      <label for="date">თარიღი:</label>
+      <input type="date" id="date" name="date">
+
+      <label for="comment">დამატებითი კომენტარი:</label>
+      <textarea id="comment" name="comment" rows="3"></textarea>
+
+      <button type="submit">გაგზავნა</button>
+    </form>
+  </div>
+</div>
+
 </body>
 </html>
